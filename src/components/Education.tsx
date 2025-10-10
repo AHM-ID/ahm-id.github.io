@@ -220,14 +220,14 @@ const Education: React.FC<LanguageProps> = ({ language }) => {
                       initial={{ scale: 0 }}
                       animate={inView ? { scale: 1 } : { scale: 0 }}
                       transition={{ delay: 0.5 + index * 0.2, type: "spring" }}
-                      className={`absolute ${
+                      className={`absolute left-6 ${
                         language === "fa"
                           ? isEven
-                            ? "right-6 md:right-1/2 md:left-auto"
-                            : "right-6 md:left-1/2 md:right-auto"
+                            ? "md:left-auto md:right-1/2"
+                            : "md:left-1/2 md:right-auto"
                           : isEven
-                          ? "left-6 md:left-1/2 md:right-auto"
-                          : "left-6 md:right-1/2 md:left-auto"
+                          ? "md:left-1/2 md:right-auto"
+                          : "md:left-auto md:right-1/2"
                       } w-6 h-6 rounded-full bg-gradient-to-r ${
                         edu.color
                       } border-4 border-white dark:border-dark-900 shadow-lg transform md:-translate-x-1/2 z-10`}

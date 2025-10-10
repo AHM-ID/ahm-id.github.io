@@ -153,7 +153,7 @@ const Header: React.FC<HeaderProps> = ({ language, setLanguage }) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden mt-4 py-4 border-t border-gray-200 dark:border-dark-700"
+            className="md:hidden mt-4 py-4 bg-white dark:bg-dark-900 rounded-lg shadow-lg border border-gray-200 dark:border-dark-700"
             dir={language === "fa" ? "rtl" : "ltr"}
           >
             {navItems[language].map((item, index) => (
@@ -163,7 +163,7 @@ const Header: React.FC<HeaderProps> = ({ language, setLanguage }) => {
                 initial={{ opacity: 0, x: language === "fa" ? 20 : -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="block w-full text-left py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-dark-800 rounded-lg transition-colors duration-200"
+                className="block w-full text-left py-3 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-dark-800 rounded-lg transition-colors duration-200 font-medium"
               >
                 {item.name}
               </motion.button>
