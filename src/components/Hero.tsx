@@ -268,7 +268,7 @@ const Hero: React.FC<LanguageProps> = ({ language }) => {
                     <img
                       src={profileImage}
                       alt="Amirhossein Maleki - DevOps & Data Engineer"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                       onError={(e) => {
                         // Fallback if image fails to load
                         (e.target as HTMLImageElement).src =
